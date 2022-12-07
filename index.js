@@ -1,15 +1,51 @@
 let coloredNav = document.querySelector('.navbar_hidden')
+let dashboard  = document.querySelector('.dashboard')
+let links = document.querySelectorAll('.navbar_menu_link')
 
 window.addEventListener('scroll', ()=>{
     if(window.scrollY > 0){
         coloredNav.classList.add('navbar_hidden_active')
+        dashboard.style.backgroundColor = '#351F65'
     }else{
         coloredNav.classList.remove('navbar_hidden_active')
+        dashboard.style.backgroundColor = 'transparent'
     }
 })
 
+// byrgerMenu
+let burgerMenu = document.getElementById('burgerMenu')
+let overlay = document.querySelector('.overlay')
 
+let isClicked = false
 
+burgerMenu.onclick = () =>{
+    if(!isClicked){
+        isClicked = true
+        burgerMenu.src = './images/xmarkSolid.svg'
+        dashboard.style.right = '0'
+        overlay.style.display = 'block'
+    }else{
+        isClicked = false
+        burgerMenu.src = './images/barsSolid.svg'
+        dashboard.style.right    = '-100%'
+        overlay.style.display = 'none'
+    }
+}
+
+links.forEach(element => {
+    element.addEventListener('click', ()=>{
+        isClicked = false
+        dashboard.style.right    = '-100%'
+        burgerMenu.src = './images/barsSolid.svg'
+    })
+});
+
+overlay.onclick = () => {
+    burgerMenu.src = './images/barsSolid.svg'
+    isClicked = false
+    dashboard.style.right    = '-100%'
+    overlay.style.display = 'none'
+}
 
 
 
