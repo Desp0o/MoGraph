@@ -77,7 +77,7 @@
 @media (max-width:600px) {
     .main{
         background-size: unset;
-        background-position:100%;
+        background-position:50%;
     }
    
     .main_header_txt{
