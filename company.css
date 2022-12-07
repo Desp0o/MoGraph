@@ -115,3 +115,9 @@
     }
 }
 
+@media (max-width:600px) {
+    .company_header{
+        font-size: 22px;
+    }
+}
+
