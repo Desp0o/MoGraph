@@ -75,11 +75,6 @@
 }
 
 @media (max-width:600px) {
-    .main{
-        background-size: unset;
-        background-position:50%;
-    }
-   
     .main_header_txt{
         font-size: 40px;
     }

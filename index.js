@@ -122,5 +122,28 @@ responsiveLogos.forEach(logos =>{
 
 
 
+// social link open
+let twitter = document.querySelector('.twitter')
+let facebook = document.querySelector('.facebook')
+let linkedin = document.querySelector('.linkedin')
+let instagram = document.querySelector('.instagram')
+
+facebook.onclick = ()=> {
+    window.open('https://www.facebook.com/vajadespo');
+}
+
+linkedin.onclick = ()=> {
+    window.open('https://www.linkedin.com/in/vazha-despotashvili-3168a31a3/');
+}
+
+twitter.onclick = ()=> {
+    window.open('https://twitter.com/VDespotashvili');
+}
+
+instagram.onclick = ()=> {
+    window.open('https://www.instagram.com/vazhadespotashvili/');
+}
+
+
 
 
