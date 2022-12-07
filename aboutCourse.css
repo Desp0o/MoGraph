@@ -57,7 +57,7 @@
 }
 
 .course_list_item{
-    list-style-type:circle;
+    list-style-type:square;
     list-style-position: inside;
 }
 

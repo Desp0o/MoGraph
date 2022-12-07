@@ -79,7 +79,7 @@ observer.observe(courseList)
 
 
 // text fadeout animation
-let companyHeader = document.querySelector('.company_header')
+let companyHeader   = document.querySelector('.company_header')
 let companyLogoRow1 = document.querySelector('.company_logos_row1')
 let companyLogoRow2 = document.querySelector('.company_logos_row2')
 
@@ -87,7 +87,7 @@ const observerFade = new IntersectionObserver(entries =>{
 
     entries.forEach(entry =>{
         entry.target.classList.toggle("fadeout", entry.isIntersecting)
-        if(entry.isIntersecting) observer.unobserve(entry.target)
+        if(entry.isIntersecting) observerFade.unobserve(entry.target)
     })
          
 },
@@ -98,6 +98,29 @@ const observerFade = new IntersectionObserver(entries =>{
 observerFade.observe(companyHeader)
 observerFade.observe(companyLogoRow1)
 observerFade.observe(companyLogoRow2)
+
+
+//responsive logo rows
+let responsiveLogos = document.querySelectorAll('.icon_responsive')
+
+
+const observerFadeResonsive = new IntersectionObserver(entries =>{
+
+    entries.forEach(entry =>{
+        entry.target.classList.toggle("icon_responsive_actie", entry.isIntersecting)
+        if(entry.isIntersecting) observerFadeResonsive.unobserve(entry.target)
+    })
+         
+},
+{
+    threshold: 0.8
+})
+
+responsiveLogos.forEach(logos =>{
+    observerFadeResonsive.observe(logos)
+})
+
+
 
 
 
