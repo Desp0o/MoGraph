@@ -21,6 +21,7 @@ let txt3 = document.querySelector('.txt3')
 let courseList = document.querySelector('.course_list')
 
 
+//text appear animation
 const observer = new IntersectionObserver(entries =>{
 
     entries.forEach(entry =>{
@@ -38,5 +39,29 @@ observer.observe(txt1)
 observer.observe(txt2)
 observer.observe(txt3)
 observer.observe(courseList)
+
+
+
+// text fadeout animation
+let companyHeader = document.querySelector('.company_header')
+let companyLogoRow1 = document.querySelector('.company_logos_row1')
+let companyLogoRow2 = document.querySelector('.company_logos_row2')
+
+const observerFade = new IntersectionObserver(entries =>{
+
+    entries.forEach(entry =>{
+        entry.target.classList.toggle("fadeout", entry.isIntersecting)
+        if(entry.isIntersecting) observer.unobserve(entry.target)
+    })
+         
+},
+{
+    threshold: 0.5
+})
+
+observerFade.observe(companyHeader)
+observerFade.observe(companyLogoRow1)
+observerFade.observe(companyLogoRow2)
+
 
 
