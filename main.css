@@ -76,9 +76,8 @@
 
 @media (max-width:600px) {
     .main{
-        padding-top:0px;
-        background-size: contain;
-        background-position: 80%;
+        background-size: cover;
+        background-position: 40%;
     }
    
     .main_header_txt{
