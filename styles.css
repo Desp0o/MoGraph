@@ -23,6 +23,10 @@
     --hoverColor:          #23A592;
 }
 
+html{
+    background-color: var(--mainTxtColor);
+}
+
 a{
     color: unset;
     text-decoration: none;
@@ -191,9 +195,15 @@ ul{
     .navbar_menu{
         display: none;
     }
+    .burger_menu_icon{
+        display: block;
+        position: absolute;
+        right: 20px;
+        justify-items: flex-end;
+    }
 }
 
-@media (max-width:1000px) {
+@media (max-width:769px) {
     nav{
         padding-left: 20px;
         padding-right: 20px;
