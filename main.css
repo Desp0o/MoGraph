@@ -76,7 +76,7 @@
 
 @media (max-width:600px) {
     .main{
-        background-size: cover;
+        background-size: unset;
         background-position:100%;
     }
    
