@@ -140,6 +140,7 @@ ul{
 
 .burger_menu_icon{
     width: 25px;
+    display: none;
 }
 
 .dashboard{
@@ -202,6 +203,10 @@ ul{
     }
     .navbar_social{
         display: none;
+    }
+
+    .burger_menu_icon{
+        display: block;
     }
 }
 
