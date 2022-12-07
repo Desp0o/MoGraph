@@ -1,0 +1,72 @@
+.main{
+    width: 100%;
+    height: 100vh;
+    padding-left: 100px;
+    padding-top: 50px;
+
+    background-image: url('./images/personal.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    
+}
+
+.main_header_txt{
+    font-size: 66px;
+    font-family: firago_bold;
+    font-weight: 900;
+    color: var(--mainTxtColor);
+    font-feature-settings: "case";
+}
+
+.main_txt{
+    font-family: firago_regular;
+    font-feature-settings: "case";
+    color: var(--secondaryTxtColor);
+    font-size: 18px;
+}
+
+.main_btn{
+    font-family: firago_regular;
+    font-feature-settings: "case";
+    color: var(--secondaryTxtColor);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 140px;
+    height: 55px;
+    background-color: var(--mainTxtColor);
+    border: 1px solid transparent;
+
+    border-radius: 50px;
+    cursor: pointer;
+
+    transition: all 0.4s ease-out;
+}
+
+.main_btn:hover{
+    background-color: transparent;
+    border: 1px solid var(--mainTxtColor);
+}
+
+
+
+
+
+
+
+
+
+
+
+.test{
+    height: 500vh;
+}

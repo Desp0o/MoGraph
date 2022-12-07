@@ -1,0 +1,123 @@
+@font-face {
+    font-family: firago_regular;
+    src: url('./fonts/FiraGO-Regular.ttf');
+}
+
+@font-face {
+    font-family: firago_bold;
+    src: url('./fonts/FiraGO-Bold.ttf');
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root{
+    --mainBodyColor:     #11111C;
+    --mainTxtColor:      #20F384;
+    --secondaryTxtColor: #F7F3F7;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+
+    
+}
+
+nav{
+    width:100%;
+    height: 80px;
+
+    position: fixed;
+    overflow-y: hidden;
+    z-index: 6;
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    box-sizing: border-box;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.123);
+    background-color: transparent;
+}
+
+.navbar_hidden{
+    width:100%;
+    height: 0px;
+    top: -10px;
+
+    position: fixed;
+    z-index: 5;
+
+    padding-left: 50px;
+    padding-right: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    box-sizing: border-box;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.123);
+    background-color: #351F65;
+
+    transition: all 0.3s ease;
+}
+
+.navbar_hidden_active{
+    top: 0px;
+    height: 80px;
+}
+
+.navbar_logo{
+    font-size: 30px;
+    font-family: 'FiraGo_BOLD, Montserrat', sans-serif;
+    font-weight: 900;
+    color: var(--mainTxtColor);
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar_menu{
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.navbar_menu_link a{
+    font-family: firago_regular;
+    font-feature-settings: "case";
+    color: var(--mainTxtColor);
+}
+
+.navbar_social_icon{
+    width: 20px;
+    fill:var(--mainTxtColor);
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.navbar_social_icon:hover{
+    fill:#23A592;
+}
+
+
+
