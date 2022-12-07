@@ -2,6 +2,7 @@
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
+    overflow-y: hidden;
 
     display: flex;
     align-items: center;
@@ -12,7 +13,8 @@
 }
 
 .about_course_inner{
-    width: 90%;
+    width: 80%;
+    
 
     display: flex;
     flex-direction: column;
@@ -23,6 +25,9 @@
     color: var(--mainTxtColor);
     font-family: firago_bold;
     font-size: 33px;
+
+    opacity: 0;
+    margin-top: 10px;
 }
 
 .course_txt_white{
@@ -46,9 +51,19 @@
     color: var(--mainTxtColor);
     font-family: firago_regular;
     font-feature-settings: "case";
+
+    opacity: 0;
+    margin-top: 10px;
 }
 
 .course_list_item{
     list-style-type:circle;
     list-style-position: inside;
+}
+
+.txt1,
+.txt2,
+.txt3{
+    opacity: 0;
+    margin-top: 10px;
 }
